@@ -27,6 +27,9 @@ A web-based inventory tracking system built for cloud kitchens to simplify and s
 
 📸 Screenshots:
 
+![Screenshot 2025-06-20 100617](https://github.com/user-attachments/assets/2b55a120-fe60-47ee-b228-2057e99abf3f)
+![Screenshot 2025-06-20 100656](https://github.com/user-attachments/assets/2e8f745b-8d41-40fb-8cf9-eff8076d6502)
+![Screenshot 2025-06-20 100712](https://github.com/user-attachments/assets/77e9b34e-4af1-49ef-b63f-30144e6fbb86)
 
 🧩 Customization:
 . Add more item categories in the frontend code
