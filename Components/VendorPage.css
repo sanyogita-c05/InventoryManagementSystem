@@ -1,0 +1,80 @@
+.vendor-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 2rem 2rem; /* ✅ Top padding to push content below navbar */
+  background-color: #f4f4f9;
+  min-height: 100vh;
+}
+
+
+.vendor-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.vendor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 300px;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vendor-form input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.toggle-btn {
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.vendor-table {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+}
+
+.vendor-table th, .vendor-table td {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.vendor-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.vendor-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

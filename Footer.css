@@ -1,0 +1,29 @@
+.footer-wrapper {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px; /* Adjust if necessary */
+  }
+  
+  .footer-section-one {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .footer-icons {
+    font-size: 24px;
+  }
+  
+  .footer-section-two {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+  
+  .footer-section-columns span {
+    display: block;
+    margin: 5px 0;
+  }
+  

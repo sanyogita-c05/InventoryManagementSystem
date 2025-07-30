@@ -1,0 +1,130 @@
+/* VendorPage.css */
+
+.vendor-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  .vendor-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vendor-content h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+  .vendor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .vendor-form input {
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .vendor-form button {
+    padding: 0.7rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .vendor-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .show-vendors-btn {
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .show-vendors-btn:hover {
+    background-color: #0056b3;
+  }
+  .vendor-list-page {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.vendor-list-page h1 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.vendor-list-page table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.vendor-list-page th, .vendor-list-page td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.vendor-list-page th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.back-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 1rem;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}

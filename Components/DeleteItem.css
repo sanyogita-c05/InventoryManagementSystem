@@ -1,0 +1,49 @@
+.delete-item-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .delete-item-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .delete-item-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .delete-item-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .delete-item-container button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-item-container button:hover {
+    background-color: #e60000;
+  }
+  
+  .delete-item-container p {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+  }
+  

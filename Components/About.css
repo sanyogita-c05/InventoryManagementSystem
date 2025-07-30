@@ -1,0 +1,37 @@
+.about-section-container {
+    margin-top: 20rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about-background-image-container {
+    position: absolute;
+    left: -150px;
+    z-index: -2;
+  }
+  .about-section-text-container {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .primary-heading {
+    font-size: 2rem;
+    color: #4c4c4c;
+  }
+  .primary-text {
+    font-size: 1.5rem;
+    color: #6a6a6a;
+    margin: 1.5rem 0;
+  }
+  .watch-video-button {
+    margin-top: 2rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  

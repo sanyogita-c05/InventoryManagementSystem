@@ -1,0 +1,194 @@
+/* 📁 src/Components/RecipePage.css */
+
+/* Main Page Styling */
+.recipe-main-page {
+  padding: 80px 20px 20px 20px; /* Add top padding to push below navbar */
+  background-color: #fff8f0;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cuisines Container */
+.cuisines-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Single Cuisine Card */
+.cuisine-card {
+  width: 180px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #fff;
+  text-align: center;
+}
+
+.cuisine-card:hover {
+  transform: scale(1.05);
+  border-color: #ff9900;
+}
+
+.cuisine-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.cuisine-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Active Selected Card */
+.cuisine-card.active {
+  border-color: #ff9900;
+  box-shadow: 0 0 10px rgba(255, 153, 0, 0.6);
+}
+
+/* Big Recipe Box */
+.big-recipe-box {
+  width: 90%;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px; /* So floating button doesn't overlap */
+}
+
+.big-recipe-box h2 {
+  color: #ff6600;
+  margin-bottom: 15px;
+}
+
+.big-recipe-box h4 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.big-recipe-box ul,
+.big-recipe-box ol {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.big-recipe-box li {
+  margin-bottom: 8px;
+}
+
+/* Floating Chatbot Button */
+.chatbot-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff9900;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 153, 0, 0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+.chatbot-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 153, 0, 1);
+}
+
+/* Chatbot Popup */
+.chatbot-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  width: 320px;
+  height: 400px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 1001;
+}
+
+/* Chatbot Header */
+.chatbot-header {
+  background-color: #ff9900;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.minimize-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Chatbot Messages */
+.chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #fafafa;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.chat-message.user {
+  background-color: #d1e7ff;
+  align-self: flex-end;
+}
+
+.chat-message.bot {
+  background-color: #ffe0b2;
+  align-self: flex-start;
+}
+
+/* Chatbot Input */
+.chatbot-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  background-color: white;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.chatbot-input button {
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}

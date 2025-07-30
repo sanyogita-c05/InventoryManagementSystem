@@ -1,0 +1,99 @@
+/* Transparent Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: transparent; /* fully transparent */
+  box-shadow: none; /* remove shadow */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  transition: top 0.3s ease-in-out;
+}
+
+/* Show/hide on scroll */
+.navbar.hidden {
+  top: -100px;
+}
+
+.navbar.visible {
+  top: 0;
+}
+
+/* Logo */
+.nav-logo-container img {
+  cursor: pointer;
+  width: 120px;
+}
+
+/* Links */
+.navbar-links-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-link {
+  position: relative;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff; /* white text on transparent */
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+.navbar-link:hover {
+  color: #ffcccc;
+  text-shadow: 0px 0px 5px #fff;
+}
+
+/* Button */
+.login-logout-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff416c, #000000);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.login-logout-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #ff4b2b, #efe9ea);
+}
+
+/* Mobile */
+.navbar-menu-container {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-links-container {
+    display: none;
+  }
+  .navbar-menu-container {
+    display: block;
+  }
+}

@@ -1,0 +1,225 @@
+/* General Layout */
+.dashboard-container {
+  position: relative;
+  padding: 2rem;
+  background: url('../Assets/bg.avif') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+.dashboard-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.dashboard-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+  max-width: 1150px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+/* Feature Card Base Style */
+.feature-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 450px;
+  height: 400px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Animation when element is in view */
+.feature-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.feature-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.feature-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 1.5rem;
+}
+
+.feature-card:hover .feature-overlay,
+.feature-card:hover .feature-content {
+  opacity: 1;
+}
+
+.feature-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-content p {
+  font-size: 1rem;
+  max-width: 90%;
+}
+
+.order-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.order-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Footer */
+footer {
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.dashboard-footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #000000;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    max-width: 90%;
+    height: 300px;
+  }
+}
+
+.feature-card:nth-child(5) {
+  grid-column: span 2;
+  justify-self: center;
+}
+
+/* Welcome Box */
+.welcome-box {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+.welcome-button {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 40px;
+  border-radius: 16px;
+  color: white;
+  border: none;
+  cursor: default;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff758c, #ff7eb3);
+  background-size: 600% 600%;
+  animation: gradientFlow 12s ease infinite;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.low-stock-modal {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
